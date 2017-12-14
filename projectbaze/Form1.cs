@@ -20,6 +20,8 @@ namespace projectbaze
         {
             InitializeComponent();
             frm = new Inregistrare(this);
+            textBox2.PasswordChar = '#';
+            textBox2.MaxLength = 50;
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -56,7 +58,7 @@ namespace projectbaze
                 }
                 else
                 {
-                    MessageBox.Show("baga userul sau parola k lumea");
+                    MessageBox.Show("USER sau PAROLA incorecta");
                 }
             }
             catch (Exception ex)

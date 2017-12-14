@@ -11,3 +11,4 @@ D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.Main.resourc
 D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.ptlaptopuri.resources
 D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.pttablete.resources
 D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.tablete.resources
+D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.csprojResolveAssemblyReference.cache
