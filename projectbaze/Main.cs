@@ -15,10 +15,10 @@ namespace projectbaze
         public Main()
         {
             InitializeComponent();
-            comboBox1.Items.Add("Laptopuri");
-            comboBox1.Items.Add("Telefoane");
-            comboBox1.Items.Add("Periferice");
-            comboBox1.Items.Add("Tablete");
+            Sidepanel.Height = button2.Height;
+            Sidepanel.Top = button2.Top;
+            ptlaptopuri1.BringToFront();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -34,6 +34,20 @@ namespace projectbaze
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Sidepanel.Height = button2.Height;
+            Sidepanel.Top = button2.Top;
+            ptlaptopuri1.BringToFront();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Sidepanel.Height = button3.Height;
+            Sidepanel.Top = button3.Top;
+            pttablete1.BringToFront();
         }
     }
 }

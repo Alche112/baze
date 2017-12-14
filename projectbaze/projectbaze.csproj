@@ -67,6 +67,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ptlaptopuri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ptlaptopuri.Designer.cs">
+      <DependentUpon>ptlaptopuri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pttablete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pttablete.Designer.cs">
+      <DependentUpon>pttablete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tablete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tablete.Designer.cs">
+      <DependentUpon>tablete.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +103,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ptlaptopuri.resx">
+      <DependentUpon>ptlaptopuri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pttablete.resx">
+      <DependentUpon>pttablete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tablete.resx">
+      <DependentUpon>tablete.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
