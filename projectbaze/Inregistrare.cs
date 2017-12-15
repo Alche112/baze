@@ -43,6 +43,7 @@ namespace projectbaze
                 };
                 data.Useris.InsertOnSubmit(employee);
                 data.SubmitChanges();
+                MessageBox.Show("User inregistrat");
             }
             catch (Exception ex)
             {

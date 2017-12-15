@@ -53,21 +53,22 @@ namespace projectbaze
                                  where (emp.Username.Contains(textBox1.Text)) && (emp.Username.Contains(textBox1.Text)&&emp.Administrator.StartsWith("da"))
                                  select emp;
                 var employees2 = from emp in context.Useris
-                                where (emp.Username.Contains(textBox1.Text)) && (emp.Username.Contains(textBox1.Text) && emp.Administrator.StartsWith("nu"))
+                                where (emp.Username.Contains(textBox1.Text)) && (emp.Username.Contains(textBox1.Text)) //&& emp.Administrator.StartsWith("nu"))
                                 select emp;
 
-                if (employees2.Any())
-                {
-                    this.Hide();
-                    Main ss = new Main();
-                    ss.Show();
-                  //  frm.Show();
-                }
-                else if(employees.Any())
+             
+                 if(employees.Any())
                 {
                     this.Hide();
                     admin administrare = new admin();
                     administrare.Show();
+                }
+             else   if (employees2.Any())
+                {
+                    this.Hide();
+                    Main ss = new Main();
+                    ss.Show();
+                    //  frm.Show();
                 }
                 else
                 {
