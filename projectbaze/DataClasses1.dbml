@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="magazin" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-7H7NE9T\ALEX;Initial Catalog=magazin;Integrated Security=True" SettingsObjectName="projectbaze.Properties.Settings" SettingsPropertyName="magazinConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Useri" Member="Useris">
+    <Type Name="Useri">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Parola" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="adresa" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Administrator" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

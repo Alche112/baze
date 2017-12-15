@@ -24,5 +24,30 @@ namespace projectbaze
             this.Hide();
             frm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                DataClasses1DataContext data = new DataClasses1DataContext();
+
+                // string Insertstatement = "Insert into Useri values('textBox1.Text', textBox2.Text,textBox3.Text,textBox4.Text)";
+                //data.ExecuteQuery<Useri>(Insertstatement);
+                var employee = new Useri
+                {
+                    Username = textBox1.Text,
+                    Parola = textBox2.Text,
+                    email = textBox3.Text,
+                    adresa = textBox4.Text
+                };
+                data.Useris.InsertOnSubmit(employee);
+                data.SubmitChanges();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }
